@@ -4,7 +4,12 @@
 DrugSAGE is an aggregation-based method for drug response imputation. It takes gene expression data as input for the task.
  
 Step #1. Prepare files for training:
-Use 1.CCLE.INTC.V1.R to prepare the input gene expression "KEGG.INTC.CCLE.tsv" for the reference network. The code also generates the gene-pathway annotation file "KEGG.CCLE.gmt" and the cell lines similarity network "KEGG.E11.CCLE.cites". Similarly, use 2.GDSC2.INTC.V1.R for the GDSC data.
+Use 1.CCLE.INTC.V1.R to prepare the following files: 
+- KEGG.INTC.CCLE.tsv: the input gene feature file. Each row represents a cell line and each column represents a gene. The gene expression has been inverse-rank normalizated.
+- KEGG.CCLE.gmt: the gene-pathway annotation file
+- KEGG.E11.CCLE.cites: the cell lines similarity network at R = 11. In the code, the parameter n_neighbors range from 4 to 20 and generages the network at different R values: KEGG.E4.CCLE.cites, KEGG.E5.CCLE.cites, and so on.
+
+Similarly, use 2.GDSC2.INTC.V1.R for the GDSC data.
 
 Use 3.CCLE_Y.R, 4.GDSC2_Y.R, and 5.GDSC1_Y.R to prepare the drug response data.
 
