@@ -12,7 +12,7 @@ Use 6.CCLE.cell_label.R to prepare the most sensitive cell lines and the most in
 
 Step #2. Run the training process:
 The code 11.round_CCLE_V2.py, 11.round_GDSC1_V2.py, and 11.round_GDSC2_V2.py apply 10 rounds of 10-fold cross validation model training. The input parameters include drug name, R, and N. For example:
-python 11.round_CCLE_V2.py 11 11
+‘’‘python 11.round_CCLE_V2.py 11 11’‘’
 This will train models for the drug Lapatinib with R = 11 and N = 11. For each fold in each round, the code generates three files: 
 - Lapatinib.CCLE.R11N11.round_i.fold_j.best_model.torch
 - Lapatinib.CCLE.R11N11.round_i.fold_j.info.txt
