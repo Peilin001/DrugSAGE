@@ -1,1 +1,15 @@
 This folder includes R codes for preprocessing.
+
+- 1.CCLE.INTC.R
+This code prepares the following files:
+
+KEGG.INTC.CCLE.tsv: the input gene feature file. Each row represents a cell line and each column represents a gene. The gene expression has been inverse-rank normalizated.
+KEGG.CCLE.gmt: the gene-pathway annotation file
+KEGG.E11.CCLE.cites: the cell lines similarity network at R = 11. In the code, the parameter n_neighbors range from 4 to 20 and generages the network at different R values: KEGG.E4.CCLE.cites, KEGG.E5.CCLE.cites, and so on.
+
+- 2.GDSC2.INTC.R
+This code is similar to 1.CCLE.INTC.V1.R except generates files for the GDSC data.
+
+- 3.CCLE_Y.R, 4.GDSC2_Y.R, and 5.GDSC1_Y.R to prepare the drug response data.
+
+- 6.CCLE.cell_label.R to prepare the most sensitive cell lines and the most insensitive cell lines for each drug.
