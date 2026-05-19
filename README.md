@@ -1,4 +1,4 @@
-# DrugSAGE: 
+# DrugSAGE: an aggregation-based method for drug response imputation
 <img width="1845" height="901" alt="Figure1" src="https://github.com/user-attachments/assets/a63435b0-e008-4e6a-b2f8-38dc0e111e3e" />
 
 DrugSAGE is an aggregation-based method for drug response imputation. It takes gene expression data as input for the task.
