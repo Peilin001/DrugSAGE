@@ -1,7 +1,11 @@
 This folder includes R codes for preprocessing.
 
 - 1.CCLE.INTC.R
-This code prepares the following files:
+This code preprocess the CCLE data. It takes the following files as input:
+- data/raw/CCLE_DepMap_18q3_RNAseq_RPKM_20180718.gct (the raw gene expression data)
+- 
+
+The colde generates the following files:
 
 KEGG.INTC.CCLE.tsv: the input gene feature file. Each row represents a cell line and each column represents a gene. The gene expression has been inverse-rank normalizated.
 KEGG.CCLE.gmt: the gene-pathway annotation file
